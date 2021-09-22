@@ -1,14 +1,13 @@
-import logo from './logo.svg';
+
 import './App.css';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-    
-     <p> Covid in this thang</p>
+
+     <p> Covid in this ho</p>
       
-      </header>
+   
     </div>
   );
 }
