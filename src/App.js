@@ -6,10 +6,10 @@ import { fetchData } from './api';
 
 class App extends React.Component {
 
-
-    async componentDidMount()
-{
+    async componentDidMount(){
   const data  = await fetchData();
+
+  console.log(data);
 }
     render() {
 
