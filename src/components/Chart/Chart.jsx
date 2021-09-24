@@ -28,7 +28,7 @@ const Chart = () => {
     
 
     return (
-        <h1>Chart</h1>
+        <h1>{lineChart}</h1>
 
     )
 }
