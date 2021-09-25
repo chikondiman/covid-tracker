@@ -15,16 +15,16 @@ const Chart = () => {
         fetchAPI();
     }, [dailyData]);
 
-    // const lineChart = (
-    //     dailyData[0]
-    //     ? (
-    //         <Line
-    //             data={{
-    //                 labels: '',
-    //                 datasets: [{}, {}],
-    //             }}
-    //         />) : null
-    // );
+    const lineChart = (
+        dailyData[0]
+        ? (
+            <Line
+                data={{
+                    labels: '',
+                    datasets: [{}, {}],
+                }}
+            />) : null
+    );
 
 
 
