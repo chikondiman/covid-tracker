@@ -21,7 +21,7 @@ useEffect(() => {
 
 
     const lineChart = (
-        dailyData[0]
+        dailyData
         ? (
             <Line
                 data={{
