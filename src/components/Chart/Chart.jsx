@@ -5,6 +5,16 @@ import styles from './Chart.module.css';
 const Chart = () => {
     const [dailyData, setDailyData] = useState({});
 
+    useEffect(() => {
+        const fetchAPI = async () => {
+         setDailyData(await fetchDailyData());
+        }
+
+        console.log(dailyData);
+
+        fetchAPI();
+    }, [dailyData]);
+
     const lineChart = (
         dailyData[0]
         ? (
@@ -16,15 +26,7 @@ const Chart = () => {
             />) : null
     );
 
-    useEffect(() => {
-        const fetchAPI = async () => {
-         setDailyData(await fetchDailyData());
-        }
 
-        console.log(dailyData);
-
-        fetchAPI();
-    }, [dailyData]);
 
 
     
