@@ -33,6 +33,12 @@ useEffect(() => {
                         fill: true,
                     }, {
                         
+                            data: dailyData(({ deaths}) => confirmed),
+                            label: 'Deaths',
+                            borderColor: '#3333ff',
+                            fill: true,
+                        
+
                     }],
                 }}
             />) : null
