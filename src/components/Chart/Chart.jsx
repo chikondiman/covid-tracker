@@ -36,6 +36,7 @@ useEffect(() => {
                             data: dailyData(({ deaths}) => deaths),
                             label: 'Deaths',
                             borderColor: 'red',
+                            backgroundColor: 'rgba(255, 0, 0, 0.5)',
                             fill: true,
                         
 
