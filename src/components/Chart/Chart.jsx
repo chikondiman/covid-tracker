@@ -26,7 +26,14 @@ useEffect(() => {
             <Line
                 data={{
                     labels: dailyData(({date}) => date),
-                    datasets: [{}, {}],
+                    datasets: [{
+                        data: dailyData(({ confirmed}) => confirmed),
+                        label: 'Infected',
+                        borderColor: '#3333ff',
+                        fill: true,
+                    }, {
+                        
+                    }],
                 }}
             />) : null
     );
