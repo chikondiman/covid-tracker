@@ -25,7 +25,7 @@ useEffect(() => {
         ? (
             <Line
                 data={{
-                    labels: '',
+                    labels: dailyData(({date}) => date),
                     datasets: [{}, {}],
                 }}
             />) : null
