@@ -33,9 +33,9 @@ useEffect(() => {
                         fill: true,
                     }, {
                         
-                            data: dailyData(({ deaths}) => confirmed),
+                            data: dailyData(({ deaths}) => deaths),
                             label: 'Deaths',
-                            borderColor: '#3333ff',
+                            borderColor: 'red',
                             fill: true,
                         
 
