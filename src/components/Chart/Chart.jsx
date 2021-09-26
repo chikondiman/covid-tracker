@@ -51,7 +51,9 @@ useEffect(() => {
     
 
     return (
-      <div className={styles.container}></div>
+      <div className={styles.container}>
+          {lineChart}
+      </div>
 
     )
 }
