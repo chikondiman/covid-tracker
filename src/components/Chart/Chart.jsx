@@ -5,7 +5,7 @@ import styles from './Chart.module.css';
 
 
 const Chart = () => {
-    const [dailyData, setDailyData] = useState({});
+    const [dailyData, setDailyData] = useState([]);
 
 useEffect(() => {
     const fetchAPI = async () => {
@@ -21,7 +21,7 @@ useEffect(() => {
 
 
     const lineChart = (
-        dailyData
+        dailyData[0]
         ? (
             <Line
                 data={{
