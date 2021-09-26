@@ -6,7 +6,7 @@ export const fetchDailyData = async() => {
     try {
         const { data } = await axios.get(`${url}/daily`);
 
-       
+       const modifiedData = data.map(dailyData)
     } catch (error) {
 
     }
