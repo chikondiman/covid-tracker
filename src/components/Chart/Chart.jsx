@@ -33,7 +33,7 @@ useEffect(() => {
                         fill: true,
                     }, {
                         
-                            data: dailyData(({ deaths}) => deaths),
+                            data: dailyData.map(({ deaths}) => deaths),
                             label: 'Deaths',
                             borderColor: 'red',
                             backgroundColor: 'rgba(255, 0, 0, 0.5)',
