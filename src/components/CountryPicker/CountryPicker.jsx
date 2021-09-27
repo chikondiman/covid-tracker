@@ -10,6 +10,7 @@ const CountryPicker = () => {
             setFetchedCountries(await countries);
 
         }
+        fetchCountries();
     })
 
     return (
