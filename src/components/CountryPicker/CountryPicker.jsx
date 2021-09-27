@@ -11,7 +11,7 @@ const CountryPicker = () => {
 
         }
         fetchCountries();
-    })
+    } [])
 
     return (
         <FormControl className={styles.formControl}>
