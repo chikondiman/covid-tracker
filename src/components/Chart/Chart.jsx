@@ -25,7 +25,7 @@ useEffect(() => {
         ? (
             <Line
                 data={{
-                    labels: dailyData(({date}) => date),
+                    labels: dailyData.map(({date}) => date),
                     datasets: [{
                         data: dailyData(({ confirmed}) => confirmed),
                         label: 'Infected',
