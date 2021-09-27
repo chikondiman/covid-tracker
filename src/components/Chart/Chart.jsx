@@ -27,7 +27,7 @@ useEffect(() => {
                 data={{
                     labels: dailyData.map(({date}) => date),
                     datasets: [{
-                        data: dailyData(({ confirmed}) => confirmed),
+                        data: dailyData.map(({ confirmed}) => confirmed),
                         label: 'Infected',
                         borderColor: '#3333ff',
                         fill: true,
