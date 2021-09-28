@@ -16,7 +16,7 @@ const CountryPicker = () => {
     return (
         <FormControl className={styles.formControl}>
             <NativeSelect>
-                <option value="global">Global! </option>
+                <option value="global">Global </option>
             </NativeSelect>
         </FormControl>
 
