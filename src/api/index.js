@@ -37,6 +37,7 @@ export const fetchData = async() => {
 export const countries = async () => {
     try {
         const response = await axios.get(`${url}/countries`);
+        console.log(response);
     } catch(error) {
         console.log(error);
     }
