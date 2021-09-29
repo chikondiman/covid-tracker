@@ -8,6 +8,7 @@ class App extends React.Component {
 
   state = {
     data: {},
+    country: '',
   }
 
   async componentDidMount(){
@@ -25,6 +26,7 @@ class App extends React.Component {
         <Cards data={data}/>
          <Chart/>
          <CountryPicker/>
+
 
             </div>
         )
