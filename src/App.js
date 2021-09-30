@@ -29,7 +29,7 @@ handleCountryChange = async (country) => {
            
         <Cards data={data}/>
          <Chart/>
-         <CountryPicker handleCountryChange={handleCountryChange}/>
+         <CountryPicker handleCountryChange={this.handleCountryChange}/>
 
 
             </div>
