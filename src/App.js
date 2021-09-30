@@ -18,7 +18,7 @@ class App extends React.Component {
 }
 
 handleCountryChange = async (country) => {
-  console.log(country);
+  // console.log(country);
 }
     render() {
 
